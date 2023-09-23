@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Gruppo";
+    src: url("C:\Users\Irene Cheung\OneDrive - BCIT\personalprojects\fonts\Gruppo")
+
+}
+
+@font-face {
+    font-family: "Tourney";
+    src: url("C:\Users\Irene Cheung\OneDrive - BCIT\personalprojects\fonts\Tourney\Tourney-Italic-VariableFont_wdth,wght.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Gruppo, sans-serif;
+}
+
+
+html {
+    background-color: black;
+    color: white;
+    /* check that this font is compatible with all browsers  */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    width: 75%;
+    padding: 0px 75px;
+}
+
+#nav-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: right;
+    padding: 50px;
+    position: fixed;
+    padding-bottom: 150px;
+    list-style: none;
+}
+
+#nav-container a:hover{
+    /* animation of a line appearing from the right */
+    background-color: white;
+    color: black;
+}
+
+
+.nav-links {
+    text-decoration: none;
+}
+
+#i-am-irene{
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    float: left;
+}
+
+#about-me-button{
+    width: 20%;
+}
+
+#work {
+/* put a gallery slide*/
+}
+
+#work, #about {
+    padding: 20px 0px;
+}
