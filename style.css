@@ -1,3 +1,5 @@
+@import url("normalize.css");
+
 @font-face {
     font-family: "Gruppo";
     src: url("C:\Users\Irene Cheung\OneDrive - BCIT\personalprojects\fonts\Gruppo")
@@ -13,7 +15,6 @@
     box-sizing: border-box;
     font-family: Gruppo, sans-serif;
 }
-
 
 html {
     background-color: black;
@@ -67,10 +68,7 @@ main {
     width: 20%;
 }
 
-#work {
-/* put a gallery slide*/
-}
-
 #work, #about {
     padding: 20px 0px;
 }
+
