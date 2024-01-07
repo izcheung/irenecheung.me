@@ -6,10 +6,13 @@
     /* check this font is compatible with all browsers */
 }
 
+p {
+    font-size: 20px;
+}
+
 main { 
     margin: 10%;
 }
-
 
 h1, h2 {
     margin-top: 2rem;
@@ -33,6 +36,13 @@ a {
     padding: 0px;
 }
 
+#cards {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 #nav-container a:hover{
     /* animation of a line appearing from the right */
     background-color: white;
@@ -54,11 +64,18 @@ a {
 }
 
 #headshot{
-    border-radius: 50%;
+    border-radius: 10px;
     max-width: 80vw;
     height: auto;
     margin: 10% 0px;
 }
+
+#about_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 @media (min-width: 768px) {
     
@@ -85,25 +102,38 @@ a {
         flex-direction: column; 
         justify-content: center;
     }
+
+    #i-am-irene p {
+        margin-right: 8%;
+    }
     
     #large_screen_nav{
         display: block;
     }
     
     #headshot{
-        width: 50%;
+        width: 33%;
         max-width: 300px;
         margin: 30px 0px;
     }
 
-    #about p{
+    #about_wrapper {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 20px;
     }
 
-    
+    #about_wrapper {
+        flex-direction: row;
+    }
+
+    #about p{
+        justify-content: center;
+        align-items: center;
+        margin: 8%;
+    }
+
+    #cards {
+        flex-direction: row;
+    } 
 }
 
 
