@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth !important;
 }
 
 p {
@@ -12,12 +13,6 @@ p {
 
 h1 {
     margin: 0px;
-    
-}
-
-*, html {
-
-    scroll-behavior: smooth !important;
 }
 
 #main_screen {
@@ -42,7 +37,7 @@ h1 {
 #i-am-irene{
     background-size: cover;
     /* background: linear-gradient(455deg, #4f4080, #00003d); */
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)), url(images/ben-kolde-FaPxZ88yZrw-unsplash.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(images/ben-kolde-FaPxZ88yZrw-unsplash.jpg);
 
 }
 
@@ -56,6 +51,10 @@ h1 {
 #about{
     /* background: linear-gradient(180deg, #cddda7, #737c5e); */
     background: linear-gradient(180deg, #bcb5b2, #453f3d);
+}
+
+#nav_dropdown{
+    margin-top: 3%;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -108,8 +107,9 @@ a {
 }
 
 #top_navbar{
-    position: fixed;
-    right: 2%;
+    position: sticky;
+    z-index: 100;
+    margin-right: 5%;
     top: 2%;
 }
 
@@ -165,6 +165,9 @@ a {
         height: 100vh;
     }
 
+    #nav_dropdown{
+        display: none;
+    }
 
     #nav-container {
         font-family: Questrial, sans-serif;
