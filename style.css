@@ -5,14 +5,31 @@
     scroll-behavior: smooth !important;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Questrial', sans-serif;
+    letter-spacing: 0.3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
 p {
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
 }
 
-h1 {
-    margin: 0px;
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 0.2rem;
 }
 
 #main_screen {
@@ -34,77 +51,28 @@ h1 {
     padding: 10%;
 }
 
-#i-am-irene{
+#home{
     background-size: cover;
-    /* background: linear-gradient(455deg, #4f4080, #00003d); */
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(images/ben-kolde-FaPxZ88yZrw-unsplash.jpg);
-
+    gap: 3%;
 }
 
-
-#work, #about{
-    /* background: linear-gradient(455deg, #404c80, #53ff88); */
-    background: linear-gradient(180deg, #a18167, #f5e9df);
+#projects{
+    background: linear-gradient(180deg, rgb(161, 129, 103), rgb(245, 233, 223));
     height: auto;
 }
 
 #about{
-    /* background: linear-gradient(180deg, #cddda7, #737c5e); */
     background: linear-gradient(180deg, #bcb5b2, #453f3d);
+    height: auto;
 }
 
-#nav_dropdown{
-    margin-top: 3%;
-}
-
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Questrial', sans-serif;
-    letter-spacing: 0.3rem;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.navbar {
-    padding: 0px;
-}
-
-.card{
-    width: 80%;
-}
-
-#cards {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.card-body {
-    color: black;
-}
-
-
-#large_screen_nav{
-    display: none;
-}
-
+/* 
 #logo {
     width: 100%;
     max-width: 60px;
     display: inline-block;
-}
+} */
 
 #top_navbar{
     position: sticky;
@@ -113,20 +81,91 @@ a {
     top: 2%;
 }
 
-#headshot{
-    border-radius: 10px;
-    max-width: 500px;
-    height: auto;
-    margin: 0px;
-    display: flex;
+#nav_dropdown{
+    margin-top: 3%;
 }
 
+.navbar {
+    padding: 0px;
+}
 
-/* About Me Page */
-#headshot {
+#large_screen_nav{
+    display: none;
+}
+
+/* Home page */
+
+#resume_btn {
+    font-family: 'Questrial', sans-serif;
+    letter-spacing: 0.3rem;
+    border-radius: 50px;
+    border: white 2px solid;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+#resume_btn:hover {
+    transform: scale(1.2);
+}
+
+/* Projects page */
+
+.card{
     width: 80%;
+    border: black;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.2);
+    border-radius: 30px;
+}
+
+.card-img-top{
+    border-radius: 30px 30px 0px 0px;
+    width: 100%;
+    height: auto;
+}
+
+#cards {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;;
+    gap: 30px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
+
+.card-title{
+    font-family: 'Questrial', sans-serif;
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
+    margin: 0px;
+}
+
+.card-text{
+    margin: 2%;
+}
+
+.github_btn, .website_btn {
+    font-family: 'Questrial', sans-serif;
+    border-radius: 50px;
+    color: black;
+    border: 1px black solid;
+    padding: 2px 10px;
+    transition: all .2s ease-in-out;
+    /* margin: 5%; */
+}
+
+#btn_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15%;
+    width: 100%;
+}
+
+/* About me page */
 
 #about_wrapper {
     display: flex;
@@ -140,52 +179,32 @@ a {
     flex-direction: column;
 }
 
-#download_resume {
-    font-family: 'Questrial', sans-serif;
-    letter-spacing: 0.3rem;
-    /* margin: 20px; */
-    border-radius: 50px;
-    padding: 10px;
-    background-color: white
+#headshot{
+    border-radius: 10px;
+    max-width: 500px;
+    height: auto;
+    margin: 0px;
+    display: flex;
+    width: 80%;
+    align-items: center;
 }
 
-
+/* Responsive layout */
 
 @media (min-width: 768px) {
-    
-    .navbar-toggler {
+
+    /* Hide mobile toggle navigation bar */
+    .navbar-toggler, #nav_dropdown {
         display: none;
     }
 
-    header {
-        display: none;
+    /* Display large screen navigation bar */
+    #large_screen_nav{
+        display: block;
     }
 
-    .slides{
-        height: 100vh;
-    }
-
-    #nav_dropdown{
-        display: none;
-    }
-
-    #nav-container {
-        font-family: Questrial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        /* justify-content: space-evenly; */
-        text-align: right;
-        padding-top: 50px;
-        position: fixed;
-        right: 8vw;
-        list-style: none;
-    }
-
-    a {
-        letter-spacing: 0.2rem;
-    }
-    
-    li a::after {
+     /* Animate a white underline to appear when hovering */
+     li a::after {
         content: "";
         width: 0;
         height: 2px;
@@ -194,31 +213,38 @@ a {
         margin: auto;
     }
 
-
     li a:hover::after {
         width: 100%;
         transition: 0.3s linear width;
     }
 
-    #i-am-irene{
+    #lg_nav_container {
+        font-family: Questrial, sans-serif;
         display: flex;
-        flex-direction: column; 
-        justify-content: center;
+        flex-direction: column;
+        text-align: right;
+        padding-top: 50px;
+        position: fixed;
+        right: 8vw;
+        list-style: none;
     }
 
-    
-    #large_screen_nav{
-        display: block;
+    #home, #projects, #about{
+        height: 100vh;
     }
-    
+
+    /* Projects page */
+
+    #cards {
+        flex-direction: row;
+    } 
+
+    /* About me page */
+
     #headshot{
         width: 250px;
         height: auto;
-        /* max-width: 300px; */
-        /* margin: 30px 0px; */
     }
-
-   
 
     #about_wrapper {
         flex-direction: row;
@@ -229,11 +255,6 @@ a {
         align-items: center;
         margin: 0% 8%;
     }
-
-    #cards {
-        flex-direction: row;
-    } 
-
 }
 
 
