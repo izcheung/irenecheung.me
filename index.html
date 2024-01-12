@@ -21,93 +21,90 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300&display=swap" rel="stylesheet"> -->
 
     <title>Irene Z. Cheung | Programming | Design </title>
 </head>
-
-<body class="bg-dark text-light">
-    <header class="row" id="top_navbar">
-        <a href="../index.html" id="logo" class="col col-lg-8"><img src="images/logo.png" width="60px"></a>
-     
-        <nav class="navbar navbar-dark bg-dark col justify-content-end">
-            <!-- <div class="container-fluid"> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- </div> -->
+<!-- include social media platforms -->
+<body class="text-white">
+    <div id="main_screen">
+        <header class="row" id="top_navbar">
+            <!-- <a href="../index.html" id="logo" class="col col-lg-8"><img src="images/logo.png" width="60px"></a> -->
+         
+            <nav class="navbar navbar-dark bg-dark col justify-content-end">
+                <!-- <div class="container-fluid"> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- </div> -->
+            </nav>
+            <div class="collapse text-end" id="navbarToggleExternalContent">
+                <div class="bg-dark">
+                    <h3><a href="#i-am-irene" target="_self" class="nav-links">HOME</a></h3>
+                    <h3><a href="#work" target="_self" class="nav-links">WORK</a></h3>
+                    <h3><a href="#about" target="_self" class="nav-links">ABOUT ME</a></h3>
+                    <!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->
+                </div>
+            </div>
+        </header>
+        <nav id="large_screen_nav">
+            <ul id="nav-container">
+                <li><a href="#i-am-irene" target="_self" class="nav-links">HOME</a></li>
+                <li><a href="#work" target="_self" class="nav-links">WORK</a></li>
+                <li><a href="#about" target="_self" class="nav-links">ABOUT ME</a></li>
+            </ul>
         </nav>
-        <div class="collapse text-end" id="navbarToggleExternalContent">
-            <div class="bg-dark">
-                <h3><a href="#i-am-irene" target="_self" class="nav-links">HOME</a></h3>
-                <h3><a href="#work" target="_self" class="nav-links">WORK</a></h3>
-                <h3><a href="#about" target="_self" class="nav-links">ABOUT</a></h3>
-                <!-- <span class="text-muted">Toggleable via the navbar brand.</span> -->
+        <main>
+            <div class="slides" id="i-am-irene">
+                <h1>Hello, I'm Irene!</h1>
+                <p>I am a passionate BCIT Computer Science Technology student looking for a CO-OP position in May 2024. As a graduate with a Bachelor of Science in Biochemistry, I bring a unique scientific mindset coupled with critical thinking, problem solving, and analytical skills to my work. These skills, coupled with a newfound passion for programming and algorithmic thinking, empower me to explore the new area of computer science. Equip me to do a career change. 
+                    I have experience ...
+                    </p>
             </div>
-        </div>
-    </header>
-    <nav id="large_screen_nav" class="col-lg-4">
-        <ul id="nav-container">
-            <li><a href="#i-am-irene" target="_self" class="nav-links">HOME</a></li>
-            <li><a href="#work" target="_self" class="nav-links">WORK</a></li>
-            <li><a href="#about" target="_self" class="nav-links">ABOUT</a></li>
-        </ul>
-    </nav>
-    <main class="col-lg-8">
-        <div id="i-am-irene">
-            <h1>Hello! I'm Irene</h1>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorum nostrum, veritatis illo laborum
-                odit
-                eveniet aspernatur architecto ducimus adipisci quibusdam dolor voluptatem fuga praesentium impedit?
-                Nesciunt aut
-                minima saepe molestiae expedita quasi dicta exercitationem fuga, eveniet hic est tenetur amet
-                repellendus
-                dolorem alias quo iste consequuntur iure reiciendis a!
-            </p>
-        </div>
-        <div id="work">
-            <h2>WORK</h2>
-            <div id="cards">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Näborly</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">GitHub link</a>
+            <div class="slides" id="work">
+                <h2>WORK</h2>
+                <div id="cards">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Näborly</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">GitHub link</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">Pass COMP1510</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">GitHub link</a>
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Pass COMP1510</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">GitHub link</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        <div id="about">
-            <h2>ABOUT ME</h2>
-            <div id="about_wrapper">
-                <img src="images/headshotresize.jpg" id="headshot" alt="Picture of Irene">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorum nostrum, veritatis
-                    illo laborum odit
-                    eveniet aspernatur architecto ducimus adipisci quibusdam dolor voluptatem fuga praesentium
-                    impedit? Nesciunt aut
-                    minima saepe molestiae expedita quasi dicta exercitationem fuga, eveniet hic est tenetur
-                    amet repellendus
-                    dolorem alias quo iste consequuntur iure reiciendis a!
-                    <button id="download_resume">Download resume</button>
-                </p>
+            <div class="slides" id="about">
+                <h2>ABOUT ME</h2>
+                <div id="about_wrapper">
+                    <img src="images/headshotresize.jpg" id="headshot" alt="Picture of Irene">
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorum nostrum, veritatis
+                            illo laborum odit
+                            eveniet aspernatur architecto ducimus adipisci quibusdam dolor voluptatem fuga praesentium
+                            impedit? Nesciunt aut
+                            minima saepe molestiae expedita quasi dicta exercitationem fuga, eveniet hic est tenetur
+                            amet repellendus
+                            dolorem alias quo iste consequuntur iure reiciendis a!
+                        </p>
+                        <button id="download_resume">DOWNLOAD</button>
+                    </div>
+                </div>
+
             </div>
-
         </div>
-
-    </main>
-    <footer>
-
-    </footer>
+        </main>
     <script src="script.js"></script>
 </body>
 
