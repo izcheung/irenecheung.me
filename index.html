@@ -51,7 +51,7 @@
         <main>
             <div class="slides" id="home">
                 <h1>Hi, I'm Irene!</h1>
-                <button id="resume_btn" class="btn">Resume</button>
+                <a href="./resume.pdf" download="resume.pdf"><button id="resume_btn" class="btn">Resume</button></a>
             </div>
             <div class="slides" id="projects">
                 <h2>PROJECTS</h2>
@@ -78,28 +78,37 @@
                 </div>
             </div>
             <div class="slides" id="about">
+                <div id="about_wrapper">    
                 <h2>ABOUT ME</h2>
-                <div id="about_wrapper">
-                    <img src="images/headshotresize.jpg" id="headshot" alt="Picture of Irene">
-                    <div>
-                        <p>I am a passionate BCIT Computer Science Technology student looking for a CO-OP position in May 2024. As a graduate with a Bachelor of Science in Biochemistry, I bring a unique scientific mindset coupled with critical thinking, problem solving, and analytical skills to my work. These skills, coupled with a newfound passion for programming and algorithmic thinking, empower me to explore the new area of computer science. Equip me to do a career change. 
-                            I have experience ... Let's connect!
-                        </p>
-                        <div id="icon_container">
-                            <a href="https://github.com/izcheung"><img src="images/github_white.png" id="github_icon" alt="Github link"></a>
-                            <a href="https://www.linkedin.com/in/izcheung/"><img src="images/linkedin_white.png" id="linkedin_icon" alt="LinkedIn"></a>
-                            <a href="mailto:icheung24@my.bcit.com"><img src="images/envelope_white.png" id="email_icon" alt="Email address"></a>
+                    <div class="container">
+                        <img src="images/headshotresize.jpg" id="headshot" alt="Picture of Irene">
+                        <p>I am a passionate BCIT Computer Science Technology student looking for a CO-OP position in May 2024. Coming from a background with a BSc degree in Biochemistry, I bring a unique scientific mindset coupled with critical thinking, problem solving, and analytical skills to my work. With my newfound passion for programming and algorithmic thinking, I am excited to apply my skills to real-world problems and create meaningful solutions.
+                        </p>    
+                    </div>
+                    <div id="skill_wrapper">
+                        <h3>TECHNICAL SKILLS</h3>
+                        <div id="skills">
+                            <div class="skill"><img src="images/python_white.png" class="skill_icon" alt="Python icon"><p>Python</p></div>
+                            <div class="skill"><img src="images/js_white.png" class="skill_icon" alt="JavaScript icon"><p>JavaScript</p></div>
+                            <div class="skill"><img src="images/html_white.png" class="skill_icon" alt="HTML icon"><p>HTML</p></div>
+                            <div class="skill"><img src="images/css_white.png" class="skill_icon" alt="CSS icon"><p>CSS</p></div>
+                            <div class="skill"><img src="images/bootstrap_white.png" class="skill_icon" alt="Bootstrap icon"><p>Bootstrap</p></div>
+                            <div class="skill"><img src="images/nodejs_white.png" class="skill_icon" alt="Node.js icon"><p>NodeJS</p></div>                         
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="slides" id="connect">
+                <h2>CONNECT WITH ME</h2>
+                <div id="icon_container">
+                    <a href="https://github.com/izcheung"><img src="images/github_white.png" id="github_icon" class="icons" alt="Github link"></a>
+                    <a href="https://www.linkedin.com/in/izcheung/"><img src="images/linkedin_white.png" id="linkedin_icon" class="icons" alt="LinkedIn"></a>
+                    <a href="mailto:icheung24@my.bcit.com"><img src="images/envelope_white.png" id="email_icon" class="icons" alt="Email address"></a>
+                </div>
             </div>
         </div>
     </main>
-    <!-- <script src="script.js"></script> -->
-    <footer>
-        <p>Irene Cheung 2024</p>
-    </footer>
 </body>
 
 </html>
