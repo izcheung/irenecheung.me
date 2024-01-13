@@ -196,7 +196,7 @@ a {
 }
 
 #headshot{
-    border-radius: 0px;
+    border-radius: 10px;
     max-width: 300px;
     height: auto;
     margin: 0px;
